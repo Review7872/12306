@@ -56,21 +56,21 @@ Sharding-JDBC
 
 ------
 
-![](.\static\1.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280423093.png)
 
-![7](.\static\7.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280424654.png)
 
-![](.\static\2.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280424198.png)
 
-![3](.\static\3.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280424700.png)
 
-![4](.\static\4.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280424652.png)
 
-![5](.\static\5.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280424462.png)
 
-![6](.\static\6.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280424972.png)
 
-![](.\static\8.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280425638.png)
 
 ------
 
@@ -142,35 +142,35 @@ Sharding-JDBC
 
 本组件提供了车票、座位、列车等方面的管理功能，涉及了 9 个表，是此项目含金量最高、业务最为复杂、最核心的模块。
 
-![](.\static\18.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280425267.png)
 
-![19](.\static\19.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280425415.png)
 
-![20](.\static\20.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280427684.png)
 
-![21](.\static\21.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280425760.png)
 
-![22](.\static\22.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280425401.png)
 
-![23](.\static\23.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426795.png)
 
-![](.\static\24.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426554.png)
 
-![25](.\static\25.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426694.png)
 
-![26](.\static\26.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426832.png)
 
-![27](.\static\27.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426807.png)
 
-![28](.\static\28.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426804.png)
 
-![29](.\static\29.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426141.png)
 
-![30](.\static\30.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280426729.png)
 
-![32](.\static\32.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280427280.png)
 
-![](.\static\33.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280427498.png)
 
 ------
 
@@ -238,15 +238,15 @@ org.opengoofy.index12306.biz.ticketservice.service.handler.ticket.tokenbucket.Ti
 
 本组件提供了订购车票的订单功能，设计了 3 个数据库表。
 
-![](.\static\13.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428624.png)
 
-![14](.\static\14.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428065.png)
 
-![15](.\static\15.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428296.png)
 
-![16](.\static\16.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428826.png)
 
-![17](.\static\17.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428748.png)
 
 ------
 
@@ -292,13 +292,13 @@ org.opengoofy.index12306.biz.ticketservice.service.handler.ticket.tokenbucket.Ti
 
 本组件提供了车票的支付功能，设计了 2 个数据库表。
 
-![](.\static\9.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428784.png)
 
-![10](.\static\10.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280429465.png)
 
-![11](.\static\11.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280428071.png)
 
-![12](.\static\12.png)
+![](https://cdn.jsdelivr.net/gh/Review7872/img@master/202407280429168.png)
 
 ------
 
