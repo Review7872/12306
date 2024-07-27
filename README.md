@@ -56,21 +56,21 @@ Sharding-JDBC
 
 ------
 
-![](static\1.png)
+![](.\static\1.png)
 
-![7](static\7.png)
+![7](.\static\7.png)
 
-![](static\2.png)
+![](.\static\2.png)
 
-![3](static\3.png)
+![3](.\static\3.png)
 
-![4](static\4.png)
+![4](.\static\4.png)
 
-![5](static\5.png)
+![5](.\static\5.png)
 
-![6](static\6.png)
+![6](.\static\6.png)
 
-![](static\8.png)
+![](.\static\8.png)
 
 ------
 
@@ -142,35 +142,35 @@ Sharding-JDBC
 
 本组件提供了车票、座位、列车等方面的管理功能，涉及了 9 个表，是此项目含金量最高、业务最为复杂、最核心的模块。
 
-![](static\18.png)
+![](.\static\18.png)
 
-![19](static\19.png)
+![19](.\static\19.png)
 
-![20](static\20.png)
+![20](.\static\20.png)
 
-![21](static\21.png)
+![21](.\static\21.png)
 
-![22](static\22.png)
+![22](.\static\22.png)
 
-![23](static\23.png)
+![23](.\static\23.png)
 
-![](static\24.png)
+![](.\static\24.png)
 
-![25](static\25.png)
+![25](.\static\25.png)
 
-![26](static\26.png)
+![26](.\static\26.png)
 
-![27](static\27.png)
+![27](.\static\27.png)
 
-![28](static\28.png)
+![28](.\static\28.png)
 
-![29](static\29.png)
+![29](.\static\29.png)
 
-![30](static\30.png)
+![30](.\static\30.png)
 
-![32](static\32.png)
+![32](.\static\32.png)
 
-![](static\33.png)
+![](.\static\33.png)
 
 ------
 
@@ -238,15 +238,15 @@ org.opengoofy.index12306.biz.ticketservice.service.handler.ticket.tokenbucket.Ti
 
 本组件提供了订购车票的订单功能，设计了 3 个数据库表。
 
-![](static\13.png)
+![](.\static\13.png)
 
-![14](static\14.png)
+![14](.\static\14.png)
 
-![15](static\15.png)
+![15](.\static\15.png)
 
-![16](static\16.png)
+![16](.\static\16.png)
 
-![17](static\17.png)
+![17](.\static\17.png)
 
 ------
 
@@ -292,13 +292,13 @@ org.opengoofy.index12306.biz.ticketservice.service.handler.ticket.tokenbucket.Ti
 
 本组件提供了车票的支付功能，设计了 2 个数据库表。
 
-![](static\9.png)
+![](.\static\9.png)
 
-![10](static\10.png)
+![10](.\static\10.png)
 
-![11](static\11.png)
+![11](.\static\11.png)
 
-![12](static\12.png)
+![12](.\static\12.png)
 
 ------
 
