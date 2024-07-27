@@ -1,0 +1,57 @@
+
+package org.opengoofy.index12306.biz.ticketservice.controller;
+
+import cn.hutool.core.util.StrUtil;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import lombok.RequiredArgsConstructor;
+import org.opengoofy.index12306.biz.ticketservice.common.enums.SeatStatusEnum;
+import org.opengoofy.index12306.biz.ticketservice.dao.entity.SeatDO;
+import org.opengoofy.index12306.biz.ticketservice.dao.entity.TrainStationRelationDO;
+import org.opengoofy.index12306.biz.ticketservice.dao.mapper.SeatMapper;
+import org.opengoofy.index12306.biz.ticketservice.dao.mapper.TrainStationRelationMapper;
+import org.opengoofy.index12306.framework.starter.cache.DistributedCache;
+import org.opengoofy.index12306.framework.starter.common.toolkit.ThreadUtil;
+import org.opengoofy.index12306.framework.starter.convention.result.Result;
+import org.opengoofy.index12306.framework.starter.web.Results;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+import static org.opengoofy.index12306.biz.ticketservice.common.constant.RedisKeyConstant.TICKET_AVAILABILITY_TOKEN_BUCKET;
+import static org.opengoofy.index12306.biz.ticketservice.common.constant.RedisKeyConstant.TRAIN_STATION_REMAINING_TICKET;
+
+/**
+ * 联调临时解决方案，不在主流程中
+ */
+@Deprecated
+@RestController
+@RequiredArgsConstructor
+public class TempSeatController {
+
+    private final SeatMapper seatMapper;
+    private final TrainStationRelationMapper trainStationRelationMapper;
+    private final DistributedCache distributedCache;
+
+    /**
+     * 座位重置
+     */
+    @PostMapping("/api/ticket-service/temp/seat/reset")
+    public Result<Void> purchaseTickets(@RequestParam String trainId) {
+        SeatDO seatDO = new SeatDO();
+        seatDO.setSeatStatus(SeatStatusEnum.AVAILABLE.getCode());
+        seatMapper.update(seatDO, Wrappers.lambdaUpdate(SeatDO.class).eq(SeatDO::getTrainId, trainId));
+        ThreadUtil.sleep(5000);
+        StringRedisTemplate stringRedisTemplate = (StringRedisTemplate) distributedCache.getInstance();
+        List<TrainStationRelationDO> trainStationRelationDOList = trainStationRelationMapper.selectList(Wrappers.lambdaQuery(TrainStationRelationDO.class)
+                .eq(TrainStationRelationDO::getTrainId, trainId));
+        for (TrainStationRelationDO each : trainStationRelationDOList) {
+            String keySuffix = StrUtil.join("_", each.getTrainId(), each.getDeparture(), each.getArrival());
+            stringRedisTemplate.delete(TRAIN_STATION_REMAINING_TICKET + keySuffix);
+        }
+        stringRedisTemplate.delete(TICKET_AVAILABILITY_TOKEN_BUCKET + trainId);
+        return Results.success();
+    }
+}
